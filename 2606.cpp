@@ -1,9 +1,11 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <cstdlib>
 using namespace std;
 
 int virus = 0;
 bool visited[101];
-vector<vector<int> > v(101);
+vector<int> v[101];
 
 void dfs(int s) {
     visited[s] = true;
