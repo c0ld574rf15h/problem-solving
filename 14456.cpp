@@ -26,7 +26,6 @@ int main(void) {
       if(j==i) continue;
       for(int k=1;k<=3;++k) {
         if(k==i || k==j) continue;
-        cout << i << j << k << '\n';
         ans = max(ans, go(i, j, k));
       }
     }
